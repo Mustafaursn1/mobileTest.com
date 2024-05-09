@@ -19,9 +19,9 @@ public class DriverFaktory {
         capabilities = new DesiredCapabilities();
         if (browser.equals("Android")) {
             capabilities.setCapability("platformName", "Android");
-            capabilities.setCapability("udid", "");
-            capabilities.setCapability("appPackage", "");
-            capabilities.setCapability("appActivity", "");
+            capabilities.setCapability("udid", "emulator-5554");
+            capabilities.setCapability("appPackage", "com.dmall.mfandroid");
+            capabilities.setCapability("appActivity", "com.dmall.activity.base.NewSplash");
 
         } else if (browser.equals("IOS")) {
             capabilities.setCapability("platformName", "IOS");
